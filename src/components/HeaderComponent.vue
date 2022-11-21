@@ -65,7 +65,7 @@ export default {
   background-color: $backgroundHeader;
 }
 .my-cont {
-  width: 1350px;
+  width: 1200px;
   margin: 0 auto;
 }
 img {
