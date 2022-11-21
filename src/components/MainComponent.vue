@@ -1,5 +1,9 @@
 <template>
-  <div></div>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
+  <section></section>
 </template>
 
 <script>

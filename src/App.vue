@@ -36,4 +36,9 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+header {
+  width: 1350px;
+  margin: 0 auto;
+}
+</style>
