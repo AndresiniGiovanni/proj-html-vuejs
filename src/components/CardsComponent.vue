@@ -34,8 +34,10 @@
             {{ text.security }}
           </li>
         </ul>
-        <button class="btn btn-primary mt-2 text-capitalize">{{text.button}}</button>
-        <p class="text-capitalize mt-3 graytext">{{text.credit}}</p>
+        <button class="btn btn-primary mt-2 text-capitalize">
+          {{ text.button }}
+        </button>
+        <p class="text-capitalize mt-3 graytext">{{ text.credit }}</p>
       </div>
     </div>
   </div>
@@ -68,9 +70,15 @@ export default {
 
 .my-cards {
   width: 30%;
+  margin-bottom: 3rem;
 }
 
-.mylist{
+.my-cards:hover {
+  transition: 1s;
+  transform: scale(1.1);
+}
+
+.mylist {
   line-height: 1.8rem;
 }
 </style>

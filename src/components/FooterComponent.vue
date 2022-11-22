@@ -23,17 +23,26 @@
         <div class="text-white">
           <h5>Company</h5>
           <ul class="graytext list-unstyled my-ul mt-4">
-            <li v-for="(list, index) in store.company" :key="index">
+            <li
+              class="my-li"
+              v-for="(list, index) in store.company"
+              :key="index"
+            >
               <i class="fa-solid fa-angle-right my-angle"></i>
-              {{ list.text }}
+              <a  class="my-li graytext text-decoration-none" href=""> {{ list.text }} </a>
             </li>
           </ul>
         </div>
         <div class="text-white">
           <h5>Usefull Links</h5>
           <ul class="graytext list-unstyled my-ul mt-4">
-            <li v-for="(list, index) in store.usefull" :key="index">
-              <i class="fa-solid fa-angle-right my-angle"></i> {{ list.text }}
+            <li
+             
+              v-for="(list, index) in store.usefull"
+              :key="index"
+            >
+              <i class="fa-solid fa-angle-right my-angle"></i>
+              <a  class="my-li graytext text-decoration-none" href=""> {{ list.text }} </a>
             </li>
           </ul>
         </div>
@@ -62,7 +71,7 @@
         </div>
       </div>
     </div>
-    <hr class="graytext">
+    <hr class="graytext mb-4" />
     <div class="d-flex justify-content-between section-w">
       <div class="graytext mb-4">
         <span>&#169;2020 Landrick. Design with &hearts; by Shreethemes </span>
@@ -96,10 +105,11 @@ export default {
 
 .section-footer {
   background-color: $footerbackground;
+  margin-top: 5rem;
 }
 .my-footer {
   width: 100%;
-  height: 600px;
+  height: 400px;
 }
 .logo-light {
   width: 35%;
@@ -133,6 +143,10 @@ export default {
     padding-right: 4px;
   }
 }
+.my-li:hover {
+  transition: 0.3s;
+  color: white;
+}
 .my-form-input,
 .my-btn {
   background-color: #27314f;
@@ -145,7 +159,7 @@ export default {
   color: $blueIcons;
   box-shadow: 1px 3px 5px rgb(47 85 212 / 10%);
 }
-.my-images{
+.my-images {
   width: 40px;
   margin: 3px;
   margin-top: -10px;

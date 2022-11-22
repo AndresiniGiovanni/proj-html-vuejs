@@ -1,5 +1,5 @@
 <template>
-  <section id="land-header">
+  <section id="land-header ">
     <div class="d-flex justify-content-between pt-3 my-cont">
       <div>
         <img :src="'/public/img/logo-dark.png'" alt="" />
@@ -10,7 +10,7 @@
           <li
             class="ms-4 me-4 mt-2 text-uppercase"
             v-for="(item, index) in headerList"
-            key="index"
+            :key="index"
           >
             {{ item.name }} <i class="fa-solid fa-chevron-down"></i>
           </li>
@@ -21,13 +21,13 @@
           <li class="me-3">
             <i class="fa-solid fa-magnifying-glass d-inline"></i>
           </li>
-          <li class="ms-1 me-1">
+          <li class="ms-1 me-1 mylibrand">
             <i class="fa-brands fa-github p-2 mybrands"></i>
           </li>
-          <li class="ms-1 me-1">
+          <li class="ms-1 me-1 mylibrand">
             <i class="fa-brands fa-stack-overflow p-2 mybrands"></i>
           </li>
-          <li class="ms-1 me-1">
+          <li class="ms-1 me-1 mylibrand">
             <i class="fa-regular fa-user p-2 mybrands"></i>
           </li>
         </ul>
@@ -86,6 +86,11 @@ li {
       background-color: $backgroundIcons;
       color: $blueIcons;
       border-radius: 7px;
+    }
+    .mybrands:hover {
+      transition: 0.5s;
+      background-color: #2f55d4;
+      color: white;
     }
   }
 }

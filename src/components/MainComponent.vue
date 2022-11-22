@@ -235,7 +235,7 @@ export default {
       ],
     };
   },
-  components: { CardsComponent, },
+  components: { CardsComponent },
 };
 </script>
 
@@ -329,6 +329,7 @@ export default {
 .my-form {
   border: 1px solid $border;
   border-radius: 20px;
+
   .myinput {
     width: 80%;
     border: 0px;
