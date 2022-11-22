@@ -1,7 +1,8 @@
 <section></section>
 <template>
+  <!-- DEVELOPER TOOLSET SECTION  -->
   <section id="developer-tollset">
-    <div class="container-fluid my-cont">
+    <div class="container-fluid my-cont section-w">
       <div class="row d-flex align-items-center">
         <div class="col-6">
           <div class="mb-3" id="developement">Developement</div>
@@ -34,7 +35,8 @@
       </div>
     </div>
   </section>
-  <section class="key-features">
+  <!-- KEY FEATURES SECTION  -->
+  <section class="key-features section-w">
     <div>
       <h3>Key Features</h3>
       <p>
@@ -69,7 +71,7 @@
       </div>
     </div>
 
-    <div class="quickstart mt-5">
+    <div class="quickstart mt-5 section-w">
       <div class="text-capitalize text-center blueicons mb-2">quick start</div>
       <h3 class="text-center">Awesome isn't it? Let's dive in!</h3>
       <p class="text-center">
@@ -82,7 +84,7 @@
       <div class="my-width">
         <div class="container my-npm-cont pt-4 pb-4 rounded-2">
           <div
-            class="text-white gray-layer d-flex justify-content-around rounded-1 p-1 me-2 ms-2 mb-3 "
+            class="text-white gray-layer d-flex justify-content-around rounded-1 p-1 me-2 ms-2 mb-3"
           >
             <span>npm</span>
             <span>nuget</span>
@@ -112,14 +114,92 @@
       </div>
     </div>
   </section>
-  <section></section>
-  <section></section>
-  <section></section>
-  <section></section>
+  <!-- EXTENSIVE DOCUMENTATION SECTION  -->
+  <section class="extensive-documentation section-w">
+    <div class="container d-flex align-items-center">
+      <div class="row">
+        <div class="col-8">
+          <h3 class="mt-5">
+            Build tools and <br />
+            extensive documentation
+          </h3>
+          <p class="mt-4 graytext">
+            You can combine all the Landrick templates into a single one, you
+            can take a <br />
+            component from the Application theme and use it in the Website.
+          </p>
+          <ul class="graytext text-capitalize list-unstyled">
+            <li>
+              <i class="fa-regular fa-circle-check blueicons me-1"></i> digital
+              marketing solutions for tomorrow
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check blueicons me-1"></i> our
+              talented &amp; experienced marketing agency
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-check blueicons me-1"></i> create
+              your own skin to match your brand
+            </li>
+          </ul>
+          <button class="btn btn-primary mt-2">
+            Read More
+            <i style="font-size: 11px" class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="col-4">
+          <img class="w-100" :src="'/public/img/1.png'" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- LANDRICK TEAM SECTION  -->
+  <section class="section-w">
+    <h3 class="text-center mb-3 mt-5">
+      Our rates for developer from landrick team
+    </h3>
+    <p class="text-center mb-5">
+      Star working with
+      <span class="text-capitalize blueicons bold">landrick</span> that can
+      provide everything you need to generate <br />
+      awareness, drive traffic, connect
+    </p>
+    <CardsComponent />
+  </section>
+  <!-- EMAIL INPUT SECTION  -->
+  <section class="section-w">
+    <h3 class="text-center mb-3 mt-5">
+      Want to be among the first to find out?
+    </h3>
+    <p class="text-center mb-5">
+      Star working with
+      <span class="text-capitalize blueicons bold">landrick</span> that can
+      provide everything you need to generate <br />
+      awareness, drive traffic, connect
+    </p>
+
+    <div class="mb-3 w-50 m-auto my-form">
+      <input
+        type="email"
+        class="myinput p-2"
+        placeholder="Email Address"
+        aria-label="Email Address"
+        aria-describedby="button-addon2"
+      />
+      <button class="btn btn-primary my-btn ms-2" type="button">
+        Get Started
+      </button>
+    </div>
+  </section>
+  <section>
+    <FooterComponent />
+  </section>
 </template>
 
 <script>
 import { store } from "../store";
+import CardsComponent from "./CardsComponent.vue";
+import FooterComponent from "./FooterComponent.vue";
 export default {
   data() {
     return {
@@ -155,18 +235,13 @@ export default {
       ],
     };
   },
+  components: { CardsComponent, },
 };
 </script>
 
 <style lang="scss" scoped>
 @use "../assets/styles/partials/variables" as *;
-
-.my-cont,
-.key-features,
-.quickstart {
-  width: 1200px;
-  margin: 0 auto;
-}
+@use "../assets/styles/main.scss" as *;
 
 #developer-tollset {
   background-color: $backgroundHeader;
@@ -246,10 +321,20 @@ export default {
     color: $prgcolor;
   }
 }
-.my-circle {
-  color: $greenEntity;
+
+.extensive-documentation {
+  margin-top: 8rem;
 }
-.blueicons {
-  color: $blueIcons;
+
+.my-form {
+  border: 1px solid $border;
+  border-radius: 20px;
+  .myinput {
+    width: 80%;
+    border: 0px;
+  }
+  .my-btn {
+    border-radius: 20px;
+  }
 }
 </style>

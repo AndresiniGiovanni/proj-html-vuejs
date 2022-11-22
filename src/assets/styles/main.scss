@@ -7,7 +7,28 @@
 
 @import "bootstrap/scss/bootstrap";
 
-
 body {
   font-family: Arial, Helvetica, sans-serif;
+}
+.section-w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.my-circle {
+  color: $greenEntity;
+}
+.blueicons {
+  color: $blueIcons;
+}
+.graytext {
+  color: $prgcolor;
+}
+
+.plan {
+  background-color: $backgroundIcons;
+}
+
+.bold {
+  font-weight: 600;
 }
