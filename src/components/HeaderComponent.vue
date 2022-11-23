@@ -1,9 +1,9 @@
 <template>
   <section class="land-header">
-    <div class="pt-3  navbar navbar-light fixed-top bg-light">
+    <div class="pt-3 navbar navbar-light fixed-top bg-light">
       <div class="container-fluid my-cont">
-        <div>
-          <img :src="'/public/img/logo-dark.png'" alt="" />
+        <div class="">
+          <img class="pb-3" :src="'/public/img/logo-dark.png'" alt="" />
         </div>
         <div>
           <ul class="list">
@@ -68,7 +68,6 @@ export default {
 .my-cont {
   width: 1200px;
   margin: 0 auto;
-  
 }
 img {
   width: 10rem;
@@ -86,12 +85,12 @@ li {
 
     .mybrands {
       background-color: $backgroundIcons;
-      color: $blueIcons;
+      color: $redIcons;
       border-radius: 7px;
     }
     .mybrands:hover {
       transition: 0.5s;
-      background-color: #2f55d4;
+      background-color: $redIcons;
       color: white;
     }
   }

@@ -34,7 +34,7 @@
             {{ text.security }}
           </li>
         </ul>
-        <button class="btn btn-primary mt-2 text-capitalize">
+        <button class="btn my-btn btn-danger mt-2 text-capitalize">
           {{ text.button }}
         </button>
         <p class="text-capitalize mt-3 graytext">{{ text.credit }}</p>

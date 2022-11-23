@@ -156,7 +156,7 @@ export default {
   width: 100%;
   padding: 0.4rem;
   margin-top: 2rem;
-  color: $blueIcons;
+  color: $redIcons;
   box-shadow: 1px 3px 5px rgb(47 85 212 / 10%);
 }
 .my-images {

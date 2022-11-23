@@ -19,7 +19,7 @@ body {
   color: $greenEntity;
 }
 .blueicons {
-  color: $blueIcons;
+  color: $redIcons;
 }
 .graytext {
   color: $prgcolor;
@@ -31,4 +31,10 @@ body {
 
 .bold {
   font-weight: 600;
+}
+
+.my-btn {
+  background-color: $redIcons;
+  border: 1px solid $redIcons;
+  color: white;
 }

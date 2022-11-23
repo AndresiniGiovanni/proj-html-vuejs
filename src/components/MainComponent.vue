@@ -2,7 +2,7 @@
 <template>
   <!-- DEVELOPER TOOLSET SECTION  -->
   <section id="developer-tollset">
-    <div class="container-fluid my-cont section-w">
+    <div class="container-fluid my-cont section-w mt-5">
       <div class="row d-flex align-items-center">
         <div class="col-6">
           <div class="mb-3" id="developement">Developement</div>
@@ -15,8 +15,8 @@
             <br />
             and managing conversion centered bootstrap4 html page.
           </p>
-          <button class="btn btn-primary me-2 mt-2">Get Started</button>
-          <button class="btn my-btn mt-2">Documentation</button>
+          <button class="btn btn-danger my-btn me-2 mt-2">Get Started</button>
+          <button class="btn  mt-2">Documentation</button>
           <div class="version mt-3">Current Version v2.6.0</div>
         </div>
         <div class="col-6 mt-5 mb-5 d-flex justify-content-end">
@@ -41,7 +41,7 @@
       <h3>Key Features</h3>
       <p>
         Start Working with
-        <span style="color: blue; font-weight: 600">Landrick</span> that can
+        <span class="redIcons" style="font-weight: 600">Landrick</span> that can
         provide everything you need to generate <br />
         awareness, drive traffic, connect.
       </p>
@@ -78,7 +78,7 @@
       <h3 class="text-center">Awesome isn't it? Let's dive in!</h3>
       <p class="text-center mb-5">
         Start Working with
-        <span style="color: blue; font-weight: 600">Landrick</span> that can
+        <span class="redIcons" style="font-weight: 600">Landrick</span> that can
         provide everything you need to generate <br />
         awareness, drive traffic, connect.
       </p>
@@ -144,7 +144,7 @@
               your own skin to match your brand
             </li>
           </ul>
-          <button class="btn btn-primary mt-2">
+          <button class="btn btn-danger my-btn mt-2">
             Read More
             <i style="font-size: 11px" class="fa-solid fa-arrow-right"></i>
           </button>
@@ -183,18 +183,15 @@
     <div class="mb-3 w-50 m-auto my-form">
       <input
         type="email"
-        class="myinput p-2"
+        class="myinput p-2 border-0"
         placeholder="Email Address"
         aria-label="Email Address"
         aria-describedby="button-addon2"
       />
-      <button class="btn btn-primary my-btn ms-2" type="button">
-        Get Started
-      </button>
+      <button class="btn btn-danger my-btn ms-2" type="button">Get Started</button>
     </div>
   </section>
-  <section>
-  </section>
+  <section></section>
 </template>
 
 <script>
@@ -250,7 +247,7 @@ export default {
   #developement {
     width: 8rem;
     background-color: $backgroundIcons;
-    color: $blueIcons;
+    color: $redIcons;
     border-radius: 10px;
     padding-left: 12px;
     font-size: 16px;
@@ -262,10 +259,6 @@ export default {
   p,
   .version {
     color: $prgcolor;
-  }
-  .my-btn {
-    color: $blueIcons;
-    border: 1px solid $blueIcons;
   }
 }
 .brand-section {
@@ -289,7 +282,7 @@ export default {
   }
   .my-awe {
     background-color: $backgroundIcons;
-    color: $blueIcons;
+    color: $redIcons;
     font-size: 19px;
     border-radius: 5px;
   }
@@ -297,7 +290,7 @@ export default {
     width: 22%;
     border: 1px solid $backgroundIcons;
     .myReadMore {
-      color: $blueIcons;
+      color: $redIcons;
     }
   }
 
