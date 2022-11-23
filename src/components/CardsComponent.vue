@@ -77,7 +77,7 @@ export default {
   top: +10px;
   right: -10px;
   width: 75px;
-  background-color: green;
+  background-color: #f17425;
   color: white;
   text-transform: capitalize;
   text-align: center;
