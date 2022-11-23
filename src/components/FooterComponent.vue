@@ -108,7 +108,6 @@ export default {
   margin-top: 5rem;
 }
 .my-footer {
-  width: 100%;
   height: 400px;
 }
 .logo-light {

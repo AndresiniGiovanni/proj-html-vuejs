@@ -1,4 +1,3 @@
-<section></section>
 <template>
   <!-- DEVELOPER TOOLSET SECTION  -->
   <section id="developer-tollset">
@@ -16,7 +15,7 @@
             and managing conversion centered bootstrap4 html page.
           </p>
           <button class="btn btn-danger my-btn me-2 mt-2">Get Started</button>
-          <button class="btn  mt-2">Documentation</button>
+          <button class="btn mt-2">Documentation</button>
           <div class="version mt-3">Current Version v2.6.0</div>
         </div>
         <div class="col-6 mt-5 mb-5 d-flex justify-content-end">
@@ -188,7 +187,9 @@
         aria-label="Email Address"
         aria-describedby="button-addon2"
       />
-      <button class="btn btn-danger my-btn ms-2" type="button">Get Started</button>
+      <button class="btn btn-danger my-btn ms-2" type="button">
+        Get Started
+      </button>
     </div>
   </section>
   <section></section>
@@ -197,7 +198,6 @@
 <script>
 import { store } from "../store";
 import CardsComponent from "./CardsComponent.vue";
-import FooterComponent from "./FooterComponent.vue";
 export default {
   data() {
     return {
