@@ -29,20 +29,20 @@
               :key="index"
             >
               <i class="fa-solid fa-angle-right my-angle"></i>
-              <a  class="my-li graytext text-decoration-none" href=""> {{ list.text }} </a>
+              <a class="my-li graytext text-decoration-none" href="">
+                {{ list.text }}
+              </a>
             </li>
           </ul>
         </div>
         <div class="text-white">
           <h5>Usefull Links</h5>
           <ul class="graytext list-unstyled my-ul mt-4">
-            <li
-             
-              v-for="(list, index) in store.usefull"
-              :key="index"
-            >
+            <li v-for="(list, index) in store.usefull" :key="index">
               <i class="fa-solid fa-angle-right my-angle"></i>
-              <a  class="my-li graytext text-decoration-none" href=""> {{ list.text }} </a>
+              <a class="my-li graytext text-decoration-none" href="">
+                {{ list.text }}
+              </a>
             </li>
           </ul>
         </div>

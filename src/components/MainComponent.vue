@@ -72,9 +72,11 @@
     </div>
 
     <div class="quickstart mt-5 section-w">
-      <div class="text-capitalize text-center blueicons mb-2">quick start</div>
+      <div class="text-capitalize text-center blueicons mb-2 pt-4">
+        quick start
+      </div>
       <h3 class="text-center">Awesome isn't it? Let's dive in!</h3>
-      <p class="text-center">
+      <p class="text-center mb-5">
         Start Working with
         <span style="color: blue; font-weight: 600">Landrick</span> that can
         provide everything you need to generate <br />
@@ -155,7 +157,7 @@
   </section>
   <!-- LANDRICK TEAM SECTION  -->
   <section class="section-w">
-    <h3 class="text-center mb-3 mt-5">
+    <h3 style="font-weight: 500" class="text-center mb-3 mt-5">
       Our rates for developer from landrick team
     </h3>
     <p class="text-center mb-5">
@@ -192,7 +194,6 @@
     </div>
   </section>
   <section>
-    <FooterComponent />
   </section>
 </template>
 
@@ -299,6 +300,11 @@ export default {
       color: $blueIcons;
     }
   }
+
+  .my-card:hover {
+    transition: 1s;
+    transform: translateY(-2rem);
+  }
 }
 .my-width {
   width: 60%;
@@ -324,6 +330,7 @@ export default {
 
 .extensive-documentation {
   margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
 .my-form {
