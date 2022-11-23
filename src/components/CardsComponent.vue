@@ -9,6 +9,7 @@
         <div class="blueicons plan my-circle mt-3 text-capitalize">
           {{ text.type }}
         </div>
+        <div class="position-absolute best">{{ text.sticker }}</div>
         <h3 class="mt-3 bold">&#36; {{ text.price }}</h3>
         <p class="graytext text-capitalize">{{ text.month }}</p>
         <p class="graytext text-capitalize">{{ text.prg }}</p>
@@ -72,7 +73,17 @@ export default {
   width: 30%;
   margin-bottom: 3rem;
 }
-
+.best {
+  top: +10px;
+  right: -10px;
+  width: 75px;
+  background-color: green;
+  color: white;
+  text-transform: capitalize;
+  text-align: center;
+  transform: rotate(40deg);
+  font-size: 14px;
+}
 .my-cards:hover {
   transition: 1s;
   transform: scale(1.1);

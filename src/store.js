@@ -51,6 +51,7 @@ export const store = reactive({
       price: "39.00",
       month: "per month",
       prg: "better for growing businesses that want more customers.",
+      sticker: 'best',
 
       full: "full access",
       security: "enhanced security",
